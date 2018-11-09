@@ -49,4 +49,14 @@ MyCustomString myCustomString;
 		assertEquals("987tyu10uu", myCustomString.getMyString());
 	}
 	
+	//This is a new comment
+		//This  test fails. Method only removes last trailing non character, not all.
+		@Test
+		public void removeTrailingNonCharactersTest3() {
+			
+			myCustomString.setMyString("987!U");
+			myCustomString.removeTrailingNonCharacters();
+			assertEquals("987tyu10uu", myCustomString.getMyString());
+		}
+		
 }
