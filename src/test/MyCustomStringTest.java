@@ -41,12 +41,12 @@ MyCustomString myCustomString;
 	
 	
 	//This  test fails. Method only removes last trailing non character, not all.
-//	@Test
-//	public void removeTrailingNonCharactersTest2() {
-//		
-//		myCustomString.setMyString("987tyu10uu.!!@");
-//		myCustomString.removeTrailingNonCharacters();
-//		assertEquals("987tyu10uu", myCustomString.getMyString());
-//	}
+	@Test
+	public void removeTrailingNonCharactersTest2() {
+		
+		myCustomString.setMyString("987tyu10uu.!!@");
+		myCustomString.removeTrailingNonCharacters();
+		assertEquals("987tyu10uu", myCustomString.getMyString());
+	}
 	
 }
